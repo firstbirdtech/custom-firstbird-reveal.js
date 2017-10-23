@@ -1,0 +1,13 @@
+database-migrator:
+  hummingbird:
+    endpoint: https://api.staging-1brd.com
+    clientId: 00000000-0000-0000-0000-000000000001
+    clientSecret: '{cipher}19be1440b6177cffea56389fb6364e9f5418b3c8a82030f0fe1cd4fb02856342640577327f2df2aa157c34e0032c33e1d289ae5dafc0d332663f9408e3a84a630be4db35fcc847ccc96b1f468dc8e51a'
+  notifications-service-db:
+    url: 'jdbc:postgresql://staging.database:5432/notifications_service_staging'
+    user: notifications_service
+    password:  '{cipher}c6c966793e1b2b86c257943c680e21117d36e0cdd826a7646160416a291d1b11c3f7ba6b8b4888f58ffba62aaf8c5010'
+  core-service-db:
+    url: 'jdbc:postgresql://staging.database:5432/hummingbird_staging'
+    user: blackBird
+    password: '{cipher}f30845d877f9ecbf4adf1da40d517355347473a98d094f11346a76cbddad375b25eed3b5c479ce501915e2e75e18e9ba'

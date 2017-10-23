@@ -1,0 +1,95 @@
+/**
+ * Custom Firstbird Theme for reveal.js
+ *
+ * By Daniel Pfeiffer
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings"; // ---------------------------------------------
+
+
+
+// Include theme-specific fonts
+@import url(../../lib/font/lato/lato.css);
+@import url(../../lib/font/open-sans/open-sans.css);
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: linear-gradient(to bottom right, #56385f 0%, #2e3a62 50%);
+
+$mainColor: #fff;
+$headingColor: #E6FF00;
+
+$mainFontSize: 38px;
+$mainFont: 'Open Sans Regular', Helvetica, sans-serif;
+$headingFont: 'Lato Regular', Helvetica, sans-serif;
+
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 600;
+$linkColor: #42affa;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+section.has-light-background {
+	&, h1, h2, h3, h4, h5, h6 {
+		color: #2F4050;
+	}
+}
+
+// Theme template ------------------------------
+@import "../template/theme"; // ---------------------------------------------
+
+.reveal {
+	section {
+		.left {
+			margin-top: auto;
+			margin-bottom: auto;
+			left: -8.33%;
+			text-align: center;
+			width: 49%;
+			z-index: -10;
+			vertical-align: middle;
+			height: 50%;
+			display: inline-block;
+			vertical-align: middle;
+			padding-right: 25px;
+			box-sizing: border-box;
+		}
+
+		.right {
+			left: 31.25%;
+			top: 75px;
+			text-align: center;
+			z-index: -10;
+			width: 49%;
+			height: 50%;
+			display: inline-block;
+			margin-top: auto;
+			margin-bottom: auto;
+			vertical-align: middle;
+			padding-left: 25px;
+			box-sizing: border-box;
+		}
+
+		img {
+			padding: 15px;
+			background: #fff;
+		}
+	}
+
+	pre {
+		font-size: 0.5em;
+	}
+}
+
+.slides {
+	width: 1200px;
+}
